@@ -14,9 +14,11 @@ const AddPost = ({ contacts, addContact }) => {
     e.preventDefault();
     const checkContactEmailExists = contacts.filter((contact) =>
       contact.email === email ? contact : null
+        //> nhập trùng giá trị email sẽ báo error => toast.error("This email already exists!!")
     );
     const checkContactPhoneExists = contacts.filter((contact) =>
       contact.phone === phone ? contact : null
+        //> nhập trùng giá trị phone sẽ báo error => toast.error("This phone number already exists!!")
     );
 
     if (!email || !name || !phone) {
@@ -29,12 +31,14 @@ const AddPost = ({ contacts, addContact }) => {
       return toast.error("This phone number already exists!!");
     }
 
+    console.log( " contacts" ,contacts[contacts.length - 1].id + 1)
     const data = {
       id: contacts.length > 0 ? contacts[contacts.length - 1].id + 1 : 0,
       email,
       name,
       phone,
     };
+    console.log("data",data)
 
     addContact(data);
     toast.success("Contact added successfully!!");

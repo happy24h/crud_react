@@ -4,11 +4,12 @@ import { useHistory, useParams } from "react-router";
 import { toast } from "react-toastify";
 
 const EditContact = ({ contacts, updateContact }) => {
-  const { id } = useParams();
+  const { id } = useParams(); //> http://localhost:3000/edit/1
   const history = useHistory();
   const currentContact = contacts.find(
     (contact) => contact.id === parseInt(id)
   );
+  console.log(currentContact) //> {id: 1, name: 'hello', email: 'testgmail@gmail.com', phone: 4567891230}
 
   useEffect(() => {
     setName(currentContact.name);
