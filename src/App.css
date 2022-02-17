@@ -6,3 +6,12 @@
     display: flex;
     justify-content: space-between;
 }
+.btn-m {
+    margin-right: 5px;
+}
+.btn-m2 {
+    margin-left: 10px;
+}
+.user-name {
+    line-height: 38px;
+}

@@ -44,7 +44,7 @@ export const EditUser = (props) => {
               </Input>
           </FormGroup>
           <Button type="submit">Edit Name</Button>
-          <Link to="/" className="btn btn-danger ml-2">Cancel</Link>
+          <Link to="/" className="btn-m2 btn btn-danger ml-2">Cancel</Link>
       </Form>
   );
 };

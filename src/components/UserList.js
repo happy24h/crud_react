@@ -12,9 +12,9 @@ export const UserList = () => {
                <>
                    {users.map(user =>(
                        <ListGroupItem className="d-flex ListUser" key={user.id}>
-                           <strong>{user.name}</strong>
+                           <strong className="user-name">{user.name}</strong>
                            <div className="ml-auto">
-                               <Link className="btn btn-warning mr-1" to={`/edit/${user.id}`}>Edit</Link>
+                               <Link className="btn btn-warning mr-1 btn-m" to={`/edit/${user.id}`}>Edit</Link>
                                <Button onClick={() => removeUser(user.id)} color="danger">Delete</Button>
                            </div>
                        </ListGroupItem>))}
