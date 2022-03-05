@@ -1,0 +1,39 @@
+{
+  "user": [
+    {
+      "name": "Adam",
+      "address": "London",
+      "email": "adam@gmail.com",
+      "contact": "033900777",
+      "id": 1
+    },
+    {
+      "name": "Tommy",
+      "address": "Japan",
+      "email": "tom@gmail.com",
+      "contact": "9423432434",
+      "id": 2
+    },
+    {
+      "name": "vietanh",
+      "email": "hello@gmail.com",
+      "contact": "023432432",
+      "address": "hanoi",
+      "id": 3
+    },
+    {
+      "name": "Nguyễn Việt Anh",
+      "email": "vietanh@gmail.com",
+      "contact": "02432432",
+      "address": "thạch đà , mê linh, hà nội.....",
+      "id": 4
+    },
+    {
+      "name": "tú béo",
+      "email": "tu@gmail.com",
+      "contact": "0132423432",
+      "address": "mê linh, hà nội",
+      "id": 5
+    }
+  ]
+}
